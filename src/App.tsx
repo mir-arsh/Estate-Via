@@ -467,7 +467,7 @@ function App() {
                 </p>
                 <button
                   type="button"
-                  onClick={() => openConsultation()}
+                  onClick={() => window.open('https://estatevia-demo.netlify.app/', '_blank')}
                   className="mt-7 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-5 py-3 text-sm font-semibold text-cyan-100 hover:bg-cyan-500/15"
                 >
                   <Play size={16} className="fill-current" />
