@@ -262,7 +262,7 @@ function App() {
       })
 
       const result = (await response.json()) as { success?: boolean | string; message?: string }
-      if (!response.ok || result.success === false) {
+      if (!response.ok || (result.success !== true && result.success !== 'true')) {
         throw new Error(result.message || 'Your request could not be sent. Please try again.')
       }
 
